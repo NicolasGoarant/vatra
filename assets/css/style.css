@@ -431,9 +431,9 @@ a.lang-flag:focus-visible {
   background-image:
     url('/assets/img/hero.jpg'),
     linear-gradient(135deg, var(--blue-soft) 0%, var(--cream) 100%);
-  /* Photo agrandie à 130 % et ancrée à ~92 % horizontal : le bord net de la carte retombe dans la zone calme du bouquet sur la table, entre la femme à la vyshyvanka et l'homme central. Ancrage vertical à 64 % : on relève l'image pour que le menton de l'homme barbu (à gauche) dégage le bord supérieur de la carte crème. */
+  /* Photo agrandie à 130 % et ancrée à ~92 % horizontal : le bord net de la carte retombe dans la zone calme du bouquet sur la table, entre la femme à la vyshyvanka et l'homme central. Ancrage vertical à 40 % : compromis entre dégagement du menton de l'homme barbu au-dessus de la carte et visibilité complète du haut des crânes (mèches, sommet des têtes). */
   background-size: 130% auto, cover;
-  background-position: 92% 64%, 50% 50%;
+  background-position: 92% 58%, 50% 50%;
   background-repeat: no-repeat;
   min-height: 68vh;
   display: flex;
@@ -1174,4 +1174,3 @@ a.lang-flag:focus-visible {
 @media (min-width: 720px) {
   .install-banner { display: none !important; }
 }
-
