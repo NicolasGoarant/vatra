@@ -6,7 +6,7 @@ baseurl: ""
 # Internationalisation (jekyll-polyglot)
 languages: ["fr", "uk"]
 default_lang: "fr"
-exclude_from_localization: ["assets", "robots.txt", "favicon.ico"]
+exclude_from_localization: ["assets", "robots.txt", "favicon.ico", "site.webmanifest", "sw.js"]
 parallel_localization: true
 lang_from_path: true
 
