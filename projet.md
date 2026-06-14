@@ -20,7 +20,9 @@ alt_url: /uk/proekt/
 
 ## Un projet né de la solidarité
 
-Depuis le début de la guerre en février 2022, des centaines d'Ukrainiens ont trouvé refuge à Nancy et dans le Grand Est. Nancy, la Métropole et le Département de Meurthe-et-Moselle se sont mobilisés, via notamment l'accueil dans les familles de déplacés ukrainiens, des dons et collectes de produits de première nécessité, des rassemblements place Stanislas, l'illumination de l'Hôtel de Ville aux couleurs de l'Ukraine. De cet élan est née une communauté franco-ukrainienne vivante. Vatra souhaite prolonger cette solidarité en transformant l'entraide d'urgence en un projet durable, un lieu qui emploie, forme et rassemble. 💙💛
+Depuis le début de la guerre en février 2022, des centaines d'Ukrainiens ont trouvé refuge à Nancy et dans le Grand Est. Nancy, la Métropole et le Département de Meurthe-et-Moselle se sont mobilisés, via notamment l'accueil dans les familles de déplacés ukrainiens, des dons et collectes de produits de première nécessité, des rassemblements place Stanislas, l'illumination de l'Hôtel de Ville aux couleurs de l'Ukraine.
+
+De cet élan est née une communauté franco-ukrainienne vivante. Vatra souhaite prolonger cette solidarité en transformant l'entraide d'urgence en un projet durable, un lieu qui emploie, forme et rassemble. 💙💛
 
 <div class="solidarity-gallery">
   <img src="/assets/img/hdv.jpeg" alt="L'hôtel de ville de Nancy illuminé aux couleurs de l'Ukraine" loading="lazy">
