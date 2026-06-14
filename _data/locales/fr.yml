@@ -163,6 +163,7 @@ footer:
   phone_label: "Tél"
   association_label: "Associations porteuses"
   legal: "Mentions légales"
+  legal_path: "/mentions-legales/"
   language_label: "Langue"
   identity_provisional: "(nom provisoire)"
   tagline: "Un café-pâtisserie franco-ukrainien et solidaire à Nancy"

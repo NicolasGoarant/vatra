@@ -163,6 +163,7 @@ footer:
   phone_label: "Тел"
   association_label: "Організації-засновники"
   legal: "Правова інформація"
+  legal_path: "/uk/pravova-informatsiya/"
   language_label: "Мова"
   identity_provisional: "(тимчасова назва)"
   tagline: "Солідарна франко-українська кафе-кондитерська в Нансі"
