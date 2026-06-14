@@ -982,7 +982,7 @@ a.lang-flag:focus-visible {
   .footer-brand-name { font-size: 1.15rem; }
   .footer-brand-note { font-size: .7rem; }
   .footer-tagline { font-size: .82rem; max-width: 22ch; }
-  .footer-line, .footer-links a { font-size: .85rem; }
+  .footer-list, .footer-list a { font-size: .85rem; }
   .footer-anchor { margin-top: .75rem; padding-top: .55rem; font-size: .7rem; }
   .footer-bottom { margin-top: .2rem; font-size: .72rem; }
 }
@@ -1039,26 +1039,22 @@ a.lang-flag:focus-visible {
   line-height: 1.5;
 }
 
-.footer-links {
+.footer-list {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: .3rem;
-}
-.footer-links li { margin: 0; }
-.footer-links a { white-space: nowrap; }
-
-.footer-line {
-  margin: 0 0 .25rem;
   color: var(--cream);
   font-weight: 600;
-  white-space: nowrap;
+  line-height: 1.5;
 }
-.footer-assoc-col .footer-line { white-space: normal; }
-.footer-line:last-child { margin-bottom: 0; }
+.footer-list li { display: inline; }
+.footer-list li:not(:last-child)::after {
+  content: " - ";
+  margin: 0 .15rem;
+  color: rgba(255, 248, 238, .55);
+  font-weight: 400;
+}
+.footer-list a { white-space: nowrap; }
 
 .footer-anchor {
   margin: 1rem 0 0;

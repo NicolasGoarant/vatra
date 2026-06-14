@@ -4,7 +4,7 @@
     <div class="footer-grid">
       <div class="footer-col footer-nav">
         <p class="footer-heading">{{ t.footer.links_label }}</p>
-        <ul class="footer-links">
+        <ul class="footer-list">
           <li><a href="{{ t.project.detail_path | relative_url }}">{{ t.nav.detail }}</a></li>
           <li><a href="{{ t.participate.path | relative_url }}">{{ t.nav.participate }}</a></li>
           <li><a href="#">{{ t.footer.legal }}</a></li>
@@ -12,20 +12,18 @@
       </div>
       <div class="footer-col footer-contact-col">
         <p class="footer-heading">{{ t.footer.contact_label }}</p>
-        <p class="footer-line">
-          <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a>
-        </p>
-        <p class="footer-line">
-          <a href="tel:+33{{ site.contact_phone | remove: ' ' | slice: 1, 9 }}">{{ site.contact_phone }}</a>
-        </p>
+        <ul class="footer-list">
+          <li><a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></li>
+          <li><a href="tel:+33{{ site.contact_phone | remove: ' ' | slice: 1, 9 }}">{{ site.contact_phone }}</a></li>
+        </ul>
       </div>
       <div class="footer-col footer-assoc-col">
         <p class="footer-heading">{{ t.footer.association_label }}</p>
-        {% for a in site.associations %}
-          <p class="footer-line">
-            <a href="{{ a.url }}" target="_blank" rel="noopener">{{ a.name }}</a>
-          </p>
-        {% endfor %}
+        <ul class="footer-list">
+          {% for a in site.associations %}
+            <li><a href="{{ a.url }}" target="_blank" rel="noopener">{{ a.name }}</a></li>
+          {% endfor %}
+        </ul>
       </div>
     </div>
     <p class="footer-anchor">{{ t.footer.anchor }}</p>
