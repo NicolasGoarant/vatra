@@ -1,0 +1,27 @@
+---
+layout: default
+lang: uk
+permalink: /doluchytysia/
+title: "Долучитися"
+description: "Висловіть свій інтерес до українського кафе-кондитерської в Нансі: стежити за проєктом, допомагати або працювати / навчатися кухні."
+alt_url: /participer/
+body_class: participate
+---
+{%- assign t = site.data.locales[site.active_lang] -%}
+
+<section class="section section-form bg-cream">
+  <div class="wrap wrap-narrow">
+    <a class="back-link" href="/uk/">{{ t.participate.back_link }}</a>
+    <h1>{{ t.participate.title }}</h1>
+    <p class="lead">{{ t.participate.intro }}</p>
+    {% include form.html t=t %}
+
+    <aside class="support-aside">
+      <h2>{{ t.support_aside.title }}</h2>
+      <p>{{ t.support_aside.body }}</p>
+      <p class="support-aside-cta">
+        <a href="{{ t.support_aside.link_url }}">{{ t.support_aside.link_label }}</a>
+      </p>
+    </aside>
+  </div>
+</section>

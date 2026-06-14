@@ -1,0 +1,141 @@
+{%- assign t = include.t -%}
+<form
+  class="interest-form"
+  action="{{ site.formspree_endpoint }}"
+  method="POST"
+  data-redirect-url="{% if site.active_lang == 'fr' %}/{% else %}/uk/{% endif %}"
+  novalidate
+>
+  <p class="form-hint">{{ t.form.required_hint }}</p>
+
+  {%- comment -%} Intent (Option A vs B) {%- endcomment -%}
+  <fieldset class="form-block form-intent" data-required>
+    <legend>{{ t.form.intent_legend }} *</legend>
+    <label class="choice">
+      <input type="radio" name="intent" value="follow_help" data-target="form-section-a" required>
+      <span>{{ t.form.option_a }}</span>
+    </label>
+    <label class="choice">
+      <input type="radio" name="intent" value="work_learn" data-target="form-section-b">
+      <span>{{ t.form.option_b }}</span>
+    </label>
+  </fieldset>
+
+  {%- comment -%} Common fields {%- endcomment -%}
+  <fieldset class="form-block">
+    <legend>{{ t.form.common_legend }}</legend>
+
+    <div class="field">
+      <label for="first_name">{{ t.form.first_name }} *</label>
+      <input id="first_name" type="text" name="first_name" autocomplete="given-name" required>
+    </div>
+
+    <div class="field">
+      <label for="email">{{ t.form.email }} *</label>
+      <input id="email" type="email" name="email" autocomplete="email" required>
+    </div>
+
+    <div class="field">
+      <label for="phone">{{ t.form.phone }}</label>
+      <input id="phone" type="tel" name="phone" autocomplete="tel">
+    </div>
+
+    <div class="field">
+      <label for="profile">{{ t.form.profile_label }} *</label>
+      <select id="profile" name="profile" required>
+        <option value="">{{ t.form.profile_placeholder }}</option>
+        {% for opt in t.form.profile_options %}
+          <option value="{{ opt.value }}">{{ opt.label }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="message">{{ t.form.message }}</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+    </div>
+  </fieldset>
+
+  {%- comment -%} Section A — follow / help {%- endcomment -%}
+  <fieldset class="form-block form-conditional" id="form-section-a" hidden>
+    <legend>{{ t.form.section_a_legend }}</legend>
+    {% for opt in t.form.help_ways_options %}
+      <label class="choice">
+        <input type="checkbox" name="help_ways[]" value="{{ opt.value }}">
+        <span>{{ opt.label }}</span>
+      </label>
+    {% endfor %}
+  </fieldset>
+
+  {%- comment -%} Section B — work / learn {%- endcomment -%}
+  <fieldset class="form-block form-conditional" id="form-section-b" hidden>
+    <legend>{{ t.form.section_b_legend }}</legend>
+
+    <p class="field-label">{{ t.form.work_interests_label }}</p>
+    {% for opt in t.form.work_interests_options %}
+      <label class="choice">
+        <input type="checkbox" name="work_interests[]" value="{{ opt.value }}">
+        <span>{{ opt.label }}</span>
+      </label>
+    {% endfor %}
+
+    <div class="field">
+      <label for="experience">{{ t.form.experience }}</label>
+      <input id="experience" type="text" name="experience">
+    </div>
+
+    <div class="field">
+      <label for="availability">{{ t.form.availability }}</label>
+      <select id="availability" name="availability">
+        <option value="">{{ t.form.availability_placeholder }}</option>
+        {% for opt in t.form.availability_options %}
+          <option value="{{ opt.value }}">{{ opt.label }}</option>
+        {% endfor %}
+      </select>
+    </div>
+  </fieldset>
+
+  {%- comment -%} Name vote (proposed to everyone) {%- endcomment -%}
+  <fieldset class="form-block form-vote">
+    <legend>{{ t.form.name_vote_legend }}</legend>
+    <p class="vote-intro">{{ t.form.name_vote_intro }}</p>
+    <p class="field-label">{{ t.form.name_vote_label }}</p>
+    {% for opt in t.form.name_vote_options %}
+      <label class="choice">
+        <input type="radio" name="name_vote" value="{{ opt.value }}">
+        <span>{{ opt.label | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+      </label>
+    {% endfor %}
+
+    <div class="field">
+      <label for="name_suggestion">{{ t.form.name_suggestion }}</label>
+      <input id="name_suggestion" type="text" name="name_suggestion">
+    </div>
+  </fieldset>
+
+  {%- comment -%} Consent (RGPD) {%- endcomment -%}
+  <fieldset class="form-block form-consent">
+    <label class="choice consent">
+      <input type="checkbox" name="consent" value="yes" required>
+      <span>{{ t.form.consent }} *</span>
+    </label>
+  </fieldset>
+
+  {%- comment -%} Honeypot anti-spam (Formspree convention) {%- endcomment -%}
+  <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" class="honeypot">
+
+  {%- comment -%} Hidden helpers for Formspree {%- endcomment -%}
+  <input type="hidden" name="_language" value="{{ site.active_lang }}">
+  <input type="hidden" name="_subject" value="Participation – Vatra">
+
+  <button type="submit" class="btn btn-primary btn-block">{{ t.form.submit }}</button>
+
+  <p class="form-error" id="form-error" hidden role="alert">
+    {{ t.form.error_message }}
+  </p>
+</form>
+
+<div class="form-success" id="form-success" hidden role="status">
+  <p><strong>{{ t.form.thanks_title }}</strong> {{ t.form.thanks_body }}</p>
+  <p><a class="form-success-link" href="/">{{ t.form.back_home }}</a></p>
+</div>

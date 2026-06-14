@@ -1,0 +1,43 @@
+title: "Un lieu ukrainien à Nancy"
+description: "Café-pâtisserie ukrainien et lieu de rencontre à Nancy — manifestation d'intérêt."
+url: ""
+baseurl: ""
+
+# Internationalisation (jekyll-polyglot)
+languages: ["fr", "uk"]
+default_lang: "fr"
+exclude_from_localization: ["assets", "robots.txt", "favicon.ico"]
+parallel_localization: true
+lang_from_path: true
+
+plugins:
+  - jekyll-polyglot
+
+# Branding — à compléter
+project_name: "Vatra"
+status_date_fr: "[mois 2026]"
+status_date_uk: "[місяць 2026]"
+contact_email: "nicolas.goarant@hotmail.fr"
+contact_phone: "06 67 06 31 79"
+
+# Associations porteuses — affichées dans l'ordre listé (alphabétique).
+# Remplacer les URL Facebook par les vraies pages.
+associations:
+  - name: "Les Lumières d'Ukraine"
+    url: "https://www.facebook.com/"
+  - name: "Ukraine Lorraine"
+    url: "https://www.facebook.com/"
+
+# Formspree
+formspree_endpoint: "https://formspree.io/f/xlgkoqvg"
+
+# Exclusions
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - docs
+  - README.md
+  - node_modules
+
+markdown: kramdown

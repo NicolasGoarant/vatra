@@ -1,0 +1,5 @@
+
+# Dépendances et build (régénérés au déploiement)
+vendor/bundle/
+.bundle/
+_site/

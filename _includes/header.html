@@ -1,0 +1,100 @@
+{%- assign t = include.t -%}
+{%- comment -%}
+  Equivalent of the current page in each language.
+  - page.alt_url is set in front matter for pages that have a translated
+    slug (e.g. /projet/ ↔ /uk/proekt/).
+  - For shared-slug pages (home), strip / add the /uk/ prefix from page.url.
+{%- endcomment -%}
+{%- if site.active_lang == site.default_lang -%}
+  {%- assign home_url = '/' -%}
+  {%- assign fr_url = page.url -%}
+  {%- if page.alt_url -%}
+    {%- assign uk_url = page.alt_url -%}
+  {%- else -%}
+    {%- assign uk_url = '/uk' | append: page.url -%}
+  {%- endif -%}
+{%- else -%}
+  {%- assign home_url = '/uk/' -%}
+  {%- assign uk_url = page.url -%}
+  {%- if page.alt_url -%}
+    {%- assign fr_url = page.alt_url -%}
+  {%- else -%}
+    {%- assign fr_url = page.url | replace_first: '/uk/', '/' -%}
+  {%- endif -%}
+{%- endif -%}
+{%- comment -%}
+  jekyll-polyglot's URL relativizer rewrites any href starting with /
+  to /uk/... on UK pages (its built-in static_href block is broken in
+  1.13.0). We sidestep it by encoding the leading slash as the HTML
+  entity &#47; — polyglot's regex requires a literal slash right after
+  the opening quote, so it doesn't match; browsers still decode the
+  entity to /. Only needed for the FR URL on UK pages; UK URLs already
+  start with /uk/, which polyglot's negative lookahead excludes.
+{%- endcomment -%}
+{%- if site.active_lang == site.default_lang -%}
+  {%- assign fr_href = fr_url -%}
+  {%- assign uk_href = uk_url -%}
+{%- else -%}
+  {%- assign fr_href = fr_url | replace_first: '/', '&#47;' -%}
+  {%- assign uk_href = uk_url -%}
+{%- endif -%}
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="{{ home_url }}">
+      <span class="brand-name">{{ site.project_name }}</span>
+      <span class="brand-sub">{{ t.meta.title }}</span>
+    </a>
+    <nav class="site-nav" aria-label="{{ t.nav.participate }}">
+      <div class="lang-switch" role="group" aria-label="{{ t.footer.language_label }}">
+        {%- if site.active_lang == site.default_lang -%}
+          <span class="lang-flag is-active" role="img" aria-label="Français" aria-current="true" lang="fr">
+            <svg viewBox="0 0 3 2" width="22" height="15" aria-hidden="true" focusable="false">
+              <rect x="0" width="1" height="2" fill="#0055A4"/>
+              <rect x="1" width="1" height="2" fill="#FFFFFF"/>
+              <rect x="2" width="1" height="2" fill="#EF4135"/>
+            </svg>
+          </span>
+          <a class="lang-flag" href="{{ uk_href }}" hreflang="uk" lang="uk" aria-label="Українська">
+            <svg viewBox="0 0 3 2" width="22" height="15" aria-hidden="true" focusable="false">
+              <rect y="0" width="3" height="1" fill="#0057B7"/>
+              <rect y="1" width="3" height="1" fill="#FFD500"/>
+            </svg>
+          </a>
+        {%- else -%}
+          <a class="lang-flag" href="{{ fr_href }}" hreflang="fr" lang="fr" aria-label="Français">
+            <svg viewBox="0 0 3 2" width="22" height="15" aria-hidden="true" focusable="false">
+              <rect x="0" width="1" height="2" fill="#0055A4"/>
+              <rect x="1" width="1" height="2" fill="#FFFFFF"/>
+              <rect x="2" width="1" height="2" fill="#EF4135"/>
+            </svg>
+          </a>
+          <span class="lang-flag is-active" role="img" aria-label="Українська" aria-current="true" lang="uk">
+            <svg viewBox="0 0 3 2" width="22" height="15" aria-hidden="true" focusable="false">
+              <rect y="0" width="3" height="1" fill="#0057B7"/>
+              <rect y="1" width="3" height="1" fill="#FFD500"/>
+            </svg>
+          </span>
+        {%- endif -%}
+      </div>
+      <a class="btn btn-primary btn-compact nav-cta" href="{{ t.participate.path | relative_url }}">{{ t.hero.btn_participate }}</a>
+      <ul class="nav-links" id="nav-panel">
+        <li><a class="nav-link" href="{{ t.project.detail_path | relative_url }}">{{ t.nav.detail }}</a></li>
+        <li class="nav-link-mobile-only"><a class="nav-link" href="{{ t.participate.path | relative_url }}">{{ t.nav.participate }}</a></li>
+        <li><a class="nav-link" href="{{ t.nav.about_path | relative_url }}">{{ t.nav.about }}</a></li>
+      </ul>
+      <button
+        type="button"
+        class="nav-toggle"
+        aria-expanded="false"
+        aria-controls="nav-panel"
+        aria-label="{{ t.nav.menu_open }}"
+        data-label-open="{{ t.nav.menu_open }}"
+        data-label-close="{{ t.nav.menu_close }}"
+      >
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </nav>
+  </div>
+</header>

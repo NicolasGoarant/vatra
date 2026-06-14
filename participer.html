@@ -1,0 +1,27 @@
+---
+layout: default
+lang: fr
+permalink: /participer/
+title: "Participer"
+description: "Manifestez votre intérêt pour un café-pâtisserie ukrainien à Nancy : suivre le projet, aider, ou venir y travailler / apprendre la cuisine."
+alt_url: /uk/doluchytysia/
+body_class: participate
+---
+{%- assign t = site.data.locales[site.active_lang] -%}
+
+<section class="section section-form bg-cream">
+  <div class="wrap wrap-narrow">
+    <a class="back-link" href="/">{{ t.participate.back_link }}</a>
+    <h1>{{ t.participate.title }}</h1>
+    <p class="lead">{{ t.participate.intro }}</p>
+    {% include form.html t=t %}
+
+    <aside class="support-aside">
+      <h2>{{ t.support_aside.title }}</h2>
+      <p>{{ t.support_aside.body }}</p>
+      <p class="support-aside-cta">
+        <a href="{{ t.support_aside.link_url }}">{{ t.support_aside.link_label }}</a>
+      </p>
+    </aside>
+  </div>
+</section>

@@ -1,0 +1,146 @@
+html_lang: "fr"
+lang_name: "Français"
+lang_code: "FR"
+switch_label: "Українська"
+
+meta:
+  title: "Un lieu franco-ukrainien à Nancy"
+  description: "Participez à l'émergence d'un lieu franco-ukrainien à Nancy — un café-pâtisserie qui rassemble et qui donne du travail."
+
+nav:
+  participate: "Participer"
+  detail: "Le projet en détail"
+  about: "Qui sommes-nous ?"
+  about_path: "/qui-sommes-nous/"
+  skip_to_content: "Aller au contenu"
+  back_home: "← Retour à l'accueil"
+  menu_label: "Menu"
+  menu_open: "Ouvrir le menu"
+  menu_close: "Fermer le menu"
+
+about:
+  title: "Qui sommes-nous ?"
+  body: "Vatra est né de la rencontre entre des Français et des Ukrainiens du Grand Nancy et de Meurthe-et-Moselle, autour d'une idée simple : créer un lieu chaleureux qui rassemble et qui donne du travail. Le projet est porté en lien avec les associations Ukraine Lorraine et Les Lumières d'Ukraine, déjà actives auprès de la communauté ukrainienne du territoire. Rien n'est figé : nous construisons ce lieu avec vous."
+  cta: "Je participe"
+  photo_alt: "La communauté ukrainienne de Lorraine réunie pour la Journée du drapeau de l'Ukraine à Nancy, en 2025."
+
+hero:
+  title: "Participez à l'émergence d'un lieu franco-ukrainien à <mark class=\"hi\">Nancy</mark>"
+  subtitle: "Un café-pâtisserie qui rassemble — et qui donne du travail. À construire ensemble."
+  tagline: "Français et Ukrainiens du Grand Nancy et de Meurthe-et-Moselle, nous portons un projet de <mark class=\"hi\">café-pâtisserie</mark> et de <mark class=\"hi\">lieu de rencontres</mark>, et nous avons besoin de votre soutien ! 💙💛"
+  btn_participate: "Je participe"
+  btn_detail: "Le projet en détail"
+  community_photo_alt: "Membres de la communauté ukrainienne de Lorraine réunis pour la Journée du drapeau de l'Ukraine à Nancy, 2025."
+
+project:
+  anchor_label: "Le projet"
+  title: "Le projet, en quelques mots"
+  teaser: |
+    Un café-pâtisserie ukrainien à Nancy : on y mange, on s'y retrouve, on fête, on apprend le français et l'ukrainien. Mais c'est surtout un lieu qui **emploie et forme** des personnes de la communauté pour les aider à retrouver un travail. La cuisine fait vivre le lieu ; donner du travail en est le cœur.
+  detail_cta: "Le projet en détail →"
+  detail_path: "/projet/"
+
+how:
+  anchor_label: "Comment ça marche"
+  title: "Un restaurant sans patron"
+  body: |
+    En France, on peut ouvrir un lieu dont le but n'est pas d'enrichir un propriétaire, mais de faire vivre les gens : c'est l'**économie sociale et solidaire**. L'argent gagné sert à payer les salaires, à former et à faire tourner le lieu.
+
+    Pour vivre, il s'appuie sur trois sources : **ce qu'on vend** (cafés, pâtisseries), **l'aide de l'État** pour l'emploi et la formation, et **le soutien** de la ville, de fondations et de chacun.
+
+examples:
+  anchor_label: "Exemples"
+  title: "Des lieux comme ça existent déjà"
+  items:
+    - "**Refugee Food** (France) — forme et emploie des personnes réfugiées dans des restaurants ouverts à tous."
+    - "**La Cantine de Marioupol / Stand with Ukraine** — des Ukrainiens formés à la cuisine, autour d'un lieu de rencontre."
+    - "**La Conciergerie de Quartier** (Nantes) — un café-restaurant qui est aussi un lieu de vie de quartier."
+
+status:
+  anchor_label: "Où on en est"
+  title: "Où on en est"
+  body: "Le projet en est au tout début : on rassemble les avis, on rencontre les partenaires (associations ukrainiennes, acteurs de l'économie sociale) et on cherche un lieu. Rien n'est figé : votre avis peut encore tout changer."
+
+participate:
+  anchor_label: "Participer"
+  title: "Participer"
+  intro: "Ce lieu se construira avec vous. Dites-nous si l'idée vous parle — ça prend une minute. 🌻"
+  path: "/participer/"
+  back_link: "← Retour à l'accueil"
+
+support_aside:
+  title: "Vous pouvez aussi soutenir le projet"
+  body: "Participer, c'est d'abord être là : nous dire que vous êtes intéressé, donner un peu de temps, une idée, un contact. Et si vous le souhaitez, vous pouvez aussi soutenir le projet financièrement — par un don, ou demain en prenant des parts de la coopérative."
+  link_label: "→ Comment soutenir le projet"
+  link_url: "/projet/#soutenir"
+
+form:
+  intent_legend: "Je suis ici pour…"
+  option_a: "Suivre le projet et/ou aider"
+  option_b: "Travailler ou apprendre la cuisine"
+
+  common_legend: "Vos coordonnées"
+  first_name: "Prénom"
+  email: "E-mail"
+  phone: "Téléphone (facultatif)"
+  profile_label: "Vous êtes…"
+  profile_placeholder: "— Choisir —"
+  profile_options:
+    - { value: "community", label: "Membre de la communauté ukrainienne" }
+    - { value: "nancy", label: "Habitant·e de Nancy" }
+    - { value: "partner", label: "Partenaire ou financeur potentiel" }
+    - { value: "other", label: "Autre" }
+  message: "Qu'aimeriez-vous trouver dans ce lieu ?"
+  consent: "J'accepte d'être recontacté·e au sujet de ce projet et que mes informations soient conservées à cette seule fin."
+
+  section_a_legend: "Comment j'aimerais aider"
+  help_ways_options:
+    - { value: "info", label: "Rester informé·e" }
+    - { value: "volunteer", label: "Bénévolat" }
+    - { value: "skills", label: "Idées et compétences" }
+    - { value: "donation", label: "Dons" }
+    - { value: "network", label: "Mettre en relation" }
+
+  section_b_legend: "Travailler ou apprendre"
+  work_interests_label: "Ce qui m'intéresse"
+  work_interests_options:
+    - { value: "kitchen", label: "Cuisine" }
+    - { value: "pastry", label: "Pâtisserie" }
+    - { value: "service", label: "Service en salle" }
+    - { value: "other", label: "Autre" }
+  experience: "Expérience (facultatif)"
+  availability: "Disponibilité"
+  availability_placeholder: "— Choisir —"
+  availability_options:
+    - { value: "now", label: "Tout de suite" }
+    - { value: "months", label: "Dans quelques mois" }
+    - { value: "tbd", label: "À préciser" }
+
+  name_vote_legend: "Votez pour le nom"
+  name_vote_intro: "Le nom n'est pas encore choisi — aidez-nous à le trouver."
+  name_vote_label: "Quel nom préférez-vous ?"
+  name_vote_options:
+    - { value: "vatra", label: "**Vatra** — le foyer, le feu qui rassemble" }
+    - { value: "kalyna", label: "**Kalyna** — la viorne, fleur emblème de l'Ukraine" }
+    - { value: "zerno", label: "**Zerno** — la graine, ce qui pousse" }
+    - { value: "razom", label: "**Razom** — ensemble" }
+    - { value: "autre", label: "Autre (à préciser ci-dessous)" }
+  name_suggestion: "…ou proposez le vôtre"
+
+  required_hint: "* champ requis"
+  submit: "Envoyer"
+  thanks_title: "Merci ! 🌻"
+  thanks_body: "Votre réponse nous a bien été transmise. Vous allez être redirigé vers l'accueil…"
+  back_home: "Retour à l'accueil"
+  error_message: "Une erreur est survenue, réessayez ou écrivez-nous à nicolas.goarant@hotmail.fr"
+
+footer:
+  contact_label: "Contact"
+  phone_label: "Tél"
+  association_label: "Associations porteuses"
+  legal: "Mentions légales"
+  language_label: "Langue"
+  identity_provisional: "(nom provisoire)"
+  tagline: "Un café-pâtisserie franco-ukrainien et solidaire à Nancy"
+  links_label: "Liens"
+  bottom: "Projet en émergence · 2026"

@@ -1,0 +1,35 @@
+---
+layout: default
+permalink: /
+body_class: home
+---
+{%- assign t = site.data.locales[site.active_lang] -%}
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-card">
+      <svg class="hero-bloom" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+        <g transform="translate(32 32)">
+          <g fill="#F4B63E">
+            <ellipse cx="0" cy="-18" rx="6" ry="13"/>
+            <ellipse cx="0" cy="-18" rx="6" ry="13" transform="rotate(45)"/>
+            <ellipse cx="0" cy="-18" rx="6" ry="13" transform="rotate(90)"/>
+            <ellipse cx="0" cy="-18" rx="6" ry="13" transform="rotate(135)"/>
+            <ellipse cx="0" cy="-18" rx="6" ry="13" transform="rotate(180)"/>
+            <ellipse cx="0" cy="-18" rx="6" ry="13" transform="rotate(225)"/>
+            <ellipse cx="0" cy="-18" rx="6" ry="13" transform="rotate(270)"/>
+            <ellipse cx="0" cy="-18" rx="6" ry="13" transform="rotate(315)"/>
+          </g>
+          <circle r="9" fill="#0B4F9E"/>
+        </g>
+      </svg>
+      <h1>{{ t.hero.title }}</h1>
+      <p class="hero-tagline">{{ t.hero.tagline }}</p>
+      <p class="hero-actions">
+        <a class="btn btn-primary" href="{{ t.participate.path | relative_url }}">{{ t.hero.btn_participate }}</a>
+        <a class="btn btn-gold" href="{{ t.project.detail_path | relative_url }}">{{ t.hero.btn_detail }}</a>
+      </p>
+    </div>
+  </div>
+</section>
+

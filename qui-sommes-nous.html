@@ -1,0 +1,24 @@
+---
+layout: default
+lang: fr
+permalink: /qui-sommes-nous/
+title: "Qui sommes-nous ?"
+description: "Vatra : un café-pâtisserie franco-ukrainien et solidaire à Nancy, porté avec Ukraine Lorraine et Les Lumières d'Ukraine."
+alt_url: /uk/khto-my/
+body_class: about
+---
+{%- assign t = site.data.locales[site.active_lang] -%}
+
+<article class="section section-about bg-cream">
+  <div class="wrap wrap-narrow">
+    <a class="back-link" href="/">{{ t.participate.back_link }}</a>
+    <h1>{{ t.about.title }}</h1>
+    <figure class="about-photo">
+      <img src="{{ '/assets/img/ukraine-lorraine-groupe.jpg' | relative_url }}" alt="{{ t.about.photo_alt }}" loading="lazy" width="960" height="529">
+    </figure>
+    <p class="lead about-body">{{ t.about.body }}</p>
+    <p class="cta-row">
+      <a class="btn btn-primary" href="{{ t.participate.path | relative_url }}">{{ t.about.cta }} →</a>
+    </p>
+  </div>
+</article>

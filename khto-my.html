@@ -1,0 +1,24 @@
+---
+layout: default
+lang: uk
+permalink: /khto-my/
+title: "Хто ми?"
+description: "Vatra — солідарна франко-українська кафе-кондитерська в Нансі. Проєкт із Ukraine Lorraine та Les Lumières d'Ukraine."
+alt_url: /qui-sommes-nous/
+body_class: about
+---
+{%- assign t = site.data.locales[site.active_lang] -%}
+
+<article class="section section-about bg-cream">
+  <div class="wrap wrap-narrow">
+    <a class="back-link" href="/uk/">{{ t.participate.back_link }}</a>
+    <h1>{{ t.about.title }}</h1>
+    <figure class="about-photo">
+      <img src="{{ '/assets/img/ukraine-lorraine-groupe.jpg' | relative_url }}" alt="{{ t.about.photo_alt }}" loading="lazy" width="960" height="529">
+    </figure>
+    <p class="lead about-body">{{ t.about.body }}</p>
+    <p class="cta-row">
+      <a class="btn btn-primary" href="{{ t.participate.path | relative_url }}">{{ t.about.cta }} →</a>
+    </p>
+  </div>
+</article>
