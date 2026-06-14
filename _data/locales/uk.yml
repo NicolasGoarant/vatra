@@ -134,6 +134,12 @@ form:
   back_home: "Повернутися на головну"
   error_message: "Виникла помилка, спробуйте ще раз або напишіть нам на nicolas.goarant@hotmail.fr"
 
+install:
+  prompt: "Встановити Vatra на головний екран"
+  ios_hint: "Щоб встановити Vatra: натисніть «Поділитися», потім «На екран «Дім»»."
+  install_btn: "Встановити"
+  close_aria: "Закрити"
+
 footer:
   contact_label: "Контакт"
   phone_label: "Тел"

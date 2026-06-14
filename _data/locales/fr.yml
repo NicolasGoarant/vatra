@@ -134,6 +134,12 @@ form:
   back_home: "Retour à l'accueil"
   error_message: "Une erreur est survenue, réessayez ou écrivez-nous à nicolas.goarant@hotmail.fr"
 
+install:
+  prompt: "Installer Vatra sur l'écran d'accueil"
+  ios_hint: "Pour installer Vatra : appuyez sur Partager, puis « Sur l'écran d'accueil »."
+  install_btn: "Installer"
+  close_aria: "Fermer"
+
 footer:
   contact_label: "Contact"
   phone_label: "Tél"

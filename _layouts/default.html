@@ -41,8 +41,15 @@
       {{ content }}
     </main>
     {% include footer.html t=t %}
+    <aside class="install-banner" id="install-banner" hidden>
+      <p class="install-banner__text" data-only="android">{{ t.install.prompt }}</p>
+      <p class="install-banner__text" data-only="ios">{{ t.install.ios_hint }}</p>
+      <button type="button" class="install-banner__install" data-only="android">{{ t.install.install_btn }}</button>
+      <button type="button" class="install-banner__close" aria-label="{{ t.install.close_aria }}">×</button>
+    </aside>
     <script src="{{ '/assets/js/nav.js' | relative_url }}" defer></script>
     <script src="{{ '/assets/js/form.js' | relative_url }}" defer></script>
+    <script src="{{ '/assets/js/pwa-install.js' | relative_url }}" defer></script>
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js'));

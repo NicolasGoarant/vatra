@@ -1100,3 +1100,76 @@ a.lang-flag:focus-visible {
   .project-detail .wrap { max-width: 720px; }
 }
 
+/* -------- Bannière d'installation PWA (mobile uniquement) -------- */
+.install-banner {
+  position: fixed;
+  left: max(.75rem, env(safe-area-inset-left));
+  right: max(.75rem, env(safe-area-inset-right));
+  bottom: calc(.75rem + env(safe-area-inset-bottom));
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  padding: .85rem 1rem;
+  background: var(--blue);
+  color: #fff;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 6px 24px rgba(8,47,99,.28);
+  transform: translateY(150%);
+  opacity: 0;
+  transition: transform .35s ease, opacity .35s ease;
+  font-size: .92rem;
+  line-height: 1.35;
+}
+.install-banner[hidden] { display: none; }
+.install-banner.is-visible { transform: translateY(0); opacity: 1; }
+
+.install-banner__text {
+  margin: 0;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.install-banner__install {
+  flex: 0 0 auto;
+  background: var(--terracotta);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-pill);
+  padding: .55rem 1.1rem;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background .15s ease;
+}
+.install-banner__install:hover,
+.install-banner__install:focus-visible {
+  background: var(--terracotta-dark);
+  outline: none;
+}
+
+.install-banner__close {
+  flex: 0 0 auto;
+  background: transparent;
+  color: #fff;
+  border: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  padding: .25rem .5rem;
+  margin: -.25rem -.25rem -.25rem 0;
+  cursor: pointer;
+  opacity: .85;
+}
+.install-banner__close:hover,
+.install-banner__close:focus-visible { opacity: 1; outline: none; }
+
+/* Bascule iOS / Android selon le mode résolu par le JS */
+.install-banner[data-mode="ios"] [data-only="android"],
+.install-banner[data-mode="android"] [data-only="ios"] { display: none; }
+
+/* Filet de sécurité : jamais sur desktop, même si le JS oublie de filtrer */
+@media (min-width: 720px) {
+  .install-banner { display: none !important; }
+}
+
