@@ -1123,6 +1123,7 @@ a.lang-flag:focus-visible {
 }
 .install-banner[hidden] { display: none; }
 .install-banner.is-visible { transform: translateY(0); opacity: 1; }
+.install-banner.is-fading { opacity: 0; transition: opacity .6s ease; }
 
 .install-banner__text {
   margin: 0;
