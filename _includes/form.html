@@ -12,11 +12,11 @@
   <fieldset class="form-block form-intent" data-required>
     <legend>{{ t.form.intent_legend }} *</legend>
     <label class="choice">
-      <input type="radio" name="intent" value="follow_help" data-target="form-section-a" required>
+      <input type="radio" name="{{ t.form.fields.intent }}" value="{{ t.form.option_a }}" data-target="form-section-a" required>
       <span>{{ t.form.option_a }}</span>
     </label>
     <label class="choice">
-      <input type="radio" name="intent" value="work_learn" data-target="form-section-b">
+      <input type="radio" name="{{ t.form.fields.intent }}" value="{{ t.form.option_b }}" data-target="form-section-b">
       <span>{{ t.form.option_b }}</span>
     </label>
   </fieldset>
@@ -27,7 +27,7 @@
 
     <div class="field">
       <label for="first_name">{{ t.form.first_name }} *</label>
-      <input id="first_name" type="text" name="first_name" autocomplete="given-name" required>
+      <input id="first_name" type="text" name="{{ t.form.fields.first_name }}" autocomplete="given-name" required>
     </div>
 
     <div class="field">
@@ -37,22 +37,22 @@
 
     <div class="field">
       <label for="phone">{{ t.form.phone }}</label>
-      <input id="phone" type="tel" name="phone" autocomplete="tel">
+      <input id="phone" type="tel" name="{{ t.form.fields.phone }}" autocomplete="tel">
     </div>
 
     <div class="field">
       <label for="profile">{{ t.form.profile_label }} *</label>
-      <select id="profile" name="profile" required>
+      <select id="profile" name="{{ t.form.fields.profile }}" required>
         <option value="">{{ t.form.profile_placeholder }}</option>
         {% for opt in t.form.profile_options %}
-          <option value="{{ opt.value }}">{{ opt.label }}</option>
+          <option value="{{ opt.label }}">{{ opt.label }}</option>
         {% endfor %}
       </select>
     </div>
 
     <div class="field">
       <label for="message">{{ t.form.message }}</label>
-      <textarea id="message" name="message" rows="4"></textarea>
+      <textarea id="message" name="{{ t.form.fields.message }}" rows="4"></textarea>
     </div>
   </fieldset>
 
@@ -61,7 +61,7 @@
     <legend>{{ t.form.section_a_legend }}</legend>
     {% for opt in t.form.help_ways_options %}
       <label class="choice">
-        <input type="checkbox" name="help_ways[]" value="{{ opt.value }}">
+        <input type="checkbox" name="{{ t.form.fields.help_ways }}[]" value="{{ opt.label }}">
         <span>{{ opt.label }}</span>
       </label>
     {% endfor %}
@@ -74,22 +74,22 @@
     <p class="field-label">{{ t.form.work_interests_label }}</p>
     {% for opt in t.form.work_interests_options %}
       <label class="choice">
-        <input type="checkbox" name="work_interests[]" value="{{ opt.value }}">
+        <input type="checkbox" name="{{ t.form.fields.work_interests }}[]" value="{{ opt.label }}">
         <span>{{ opt.label }}</span>
       </label>
     {% endfor %}
 
     <div class="field">
       <label for="experience">{{ t.form.experience }}</label>
-      <input id="experience" type="text" name="experience">
+      <input id="experience" type="text" name="{{ t.form.fields.experience }}">
     </div>
 
     <div class="field">
       <label for="availability">{{ t.form.availability }}</label>
-      <select id="availability" name="availability">
+      <select id="availability" name="{{ t.form.fields.availability }}">
         <option value="">{{ t.form.availability_placeholder }}</option>
         {% for opt in t.form.availability_options %}
-          <option value="{{ opt.value }}">{{ opt.label }}</option>
+          <option value="{{ opt.label }}">{{ opt.label }}</option>
         {% endfor %}
       </select>
     </div>
@@ -102,21 +102,21 @@
     <p class="field-label">{{ t.form.name_vote_label }}</p>
     {% for opt in t.form.name_vote_options %}
       <label class="choice">
-        <input type="radio" name="name_vote" value="{{ opt.value }}">
+        <input type="radio" name="{{ t.form.fields.name_vote }}" value="{{ opt.label | replace: '**', '' }}">
         <span>{{ opt.label | markdownify | remove: '<p>' | remove: '</p>' }}</span>
       </label>
     {% endfor %}
 
     <div class="field">
       <label for="name_suggestion">{{ t.form.name_suggestion }}</label>
-      <input id="name_suggestion" type="text" name="name_suggestion">
+      <input id="name_suggestion" type="text" name="{{ t.form.fields.name_suggestion }}">
     </div>
   </fieldset>
 
   {%- comment -%} Consent (RGPD) {%- endcomment -%}
   <fieldset class="form-block form-consent">
     <label class="choice consent">
-      <input type="checkbox" name="consent" value="yes" required>
+      <input type="checkbox" name="{{ t.form.fields.consent }}" value="{{ t.form.consent_value }}" required>
       <span>{{ t.form.consent }} *</span>
     </label>
   </fieldset>

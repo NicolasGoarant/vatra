@@ -20,7 +20,7 @@ alt_url: /uk/proekt/
 
 ## Né de la solidarité
 
-Depuis le début de la guerre en 2022, des centaines d'Ukrainiens ont trouvé refuge à Nancy et dans le Grand Est. La ville s'est mobilisée via notamment l'accueil dans les familles de déplacés ukrainiens, des dons et des collectes de produits de première nécessité, des rassemblements place Stanislas, l'illumination de l'hôtel de ville aux couleurs de l'Ukraine. De cet élan est née une communauté franco-ukrainienne vivante. Vatra prolonge cette solidarité en transformant l'entraide d'urgence en un projet durable, un lieu qui emploie, forme et rassemble. 💙💛
+Depuis le début de la guerre en 2022, des centaines d'Ukrainiens ont trouvé refuge à Nancy, en Meurthe-et-Moselle et dans le Grand Est. Nancy, la Métropole du Grand Nancy et le département de Meurthe-et-Moselle se sont mobilisés : accueil dans les familles de déplacés ukrainiens, dons et collectes de produits de première nécessité, rassemblements place Stanislas, illumination de l'hôtel de ville aux couleurs de l'Ukraine. De cet élan est née une communauté franco-ukrainienne vivante. Vatra prolonge cette solidarité en transformant l'entraide d'urgence en un projet durable, un lieu qui emploie, forme et rassemble. 💙💛
 
 <div class="solidarity-gallery">
   <img src="/assets/img/hdv.jpeg" alt="L'hôtel de ville de Nancy illuminé aux couleurs de l'Ukraine" loading="lazy">
@@ -40,7 +40,7 @@ Depuis le début de la guerre en 2022, des centaines d'Ukrainiens ont trouvé re
 
 ## Un lieu vivant, pas seulement un commerce
 
-Le café-pâtisserie est aussi — et surtout — un lieu de rencontre, ouvert à tous, pensé pour faire se croiser Français et Ukrainiens. On y organisera notamment :
+Le café-pâtisserie est aussi — et surtout — un lieu de rencontre, ouvert à tous, pensé pour faire se croiser Français et Ukrainiens de Nancy et de toute la Meurthe-et-Moselle. On y organisera notamment :
 
 - 📚 des cours de français (FLE) pour les nouveaux arrivants ;
 - 🎨 des expositions et des rendez-vous culturels autour de la musique, de lectures, de projections ;
@@ -49,7 +49,7 @@ Le café-pâtisserie est aussi — et surtout — un lieu de rencontre, ouvert �
 
 ## Le lieu recherché
 
-Nous cherchons un local d'environ 80 m² à Nancy ou dans la Métropole du Grand Nancy : de quoi aménager un espace café-pâtisserie, un coin rencontre et une petite cuisine. Vous connaissez un local disponible ? Parlez-nous-en. 🔑
+Nous cherchons un local d'environ 80 m² à Nancy ou dans la Métropole du Grand Nancy : de quoi aménager un espace café-pâtisserie, un coin rencontre et une petite cuisine. Le lieu rayonnera sur Nancy, sa métropole et plus largement la Meurthe-et-Moselle. Vous connaissez un local disponible ? Parlez-nous-en. 🔑
 
 ## Le modèle économique
 
@@ -61,7 +61,7 @@ Ce lieu fonctionne comme une entreprise sociale : le but n'est pas d'enrichir un
 
 - **ce qu'on vend** — cafés, pâtisseries, traiteur ;
 - **le soutien de la puissance publique** — pour l'emploi et la formation des personnes éloignées de l'emploi ;
-- **le soutien** des collectivités, des fondations, etc.
+- **le soutien** des collectivités — communes, Métropole du Grand Nancy, Département de Meurthe-et-Moselle, Région Grand Est —, de fondations, etc.
 
 Aucune de ces sources ne suffit seule. Ensemble, elles rendent le projet possible.
 

@@ -75,6 +75,23 @@ support_aside:
   link_url: "/uk/proekt/#soutenir"
 
 form:
+  # Локалізовані атрибути `name` для HTML — щоб сповіщення Formspree
+  # приходили читабельною українською. Поле email лишається `email`.
+  fields:
+    intent: "Я тут, щоб"
+    first_name: "Ім'я"
+    phone: "Телефон"
+    profile: "Хто ви"
+    message: "Повідомлення"
+    help_ways: "Як допомогти"
+    work_interests: "Що мене цікавить"
+    experience: "Досвід"
+    availability: "Доступність"
+    name_vote: "Голосування за назву"
+    name_suggestion: "Пропозиція назви"
+    consent: "Згода"
+  consent_value: "так"
+
   intent_legend: "Я тут, щоб…"
   option_a: "Стежити за проєктом і/або допомагати"
   option_b: "Працювати або навчатися кухні"
@@ -150,4 +167,5 @@ footer:
   identity_provisional: "(тимчасова назва)"
   tagline: "Солідарна франко-українська кафе-кондитерська в Нансі"
   links_label: "Посилання"
+  anchor: "Проєкт укорінений у Нансі та Мерт-і-Мозель"
   bottom: "Проєкт у стадії створення · 2026"

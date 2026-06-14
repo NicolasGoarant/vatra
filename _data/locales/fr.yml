@@ -75,6 +75,23 @@ support_aside:
   link_url: "/projet/#soutenir"
 
 form:
+  # Libellés utilisés comme attributs HTML `name` afin que les notifications
+  # Formspree arrivent en français lisible. Email reste `email`.
+  fields:
+    intent: "Je suis ici pour"
+    first_name: "Prénom"
+    phone: "Téléphone"
+    profile: "Vous êtes"
+    message: "Message"
+    help_ways: "Comment aider"
+    work_interests: "Centres d'intérêt"
+    experience: "Expérience"
+    availability: "Disponibilité"
+    name_vote: "Vote pour le nom"
+    name_suggestion: "Suggestion de nom"
+    consent: "Consentement"
+  consent_value: "oui"
+
   intent_legend: "Je suis ici pour…"
   option_a: "Suivre le projet et/ou aider"
   option_b: "Travailler ou apprendre la cuisine"
@@ -150,4 +167,5 @@ footer:
   identity_provisional: "(nom provisoire)"
   tagline: "Un café-pâtisserie franco-ukrainien et solidaire à Nancy"
   links_label: "Liens"
+  anchor: "Un projet ancré à Nancy et en Meurthe-et-Moselle"
   bottom: "Projet en émergence · 2026"

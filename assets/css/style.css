@@ -983,7 +983,8 @@ a.lang-flag:focus-visible {
   .footer-brand-note { font-size: .7rem; }
   .footer-tagline { font-size: .82rem; max-width: 22ch; }
   .footer-line, .footer-links a { font-size: .85rem; }
-  .footer-bottom { margin-top: .75rem; padding-top: .55rem; font-size: .72rem; }
+  .footer-anchor { margin-top: .75rem; padding-top: .55rem; font-size: .7rem; }
+  .footer-bottom { margin-top: .2rem; font-size: .72rem; }
 }
 
 .footer-grid {
@@ -1059,10 +1060,18 @@ a.lang-flag:focus-visible {
 .footer-assoc-col .footer-line { white-space: normal; }
 .footer-line:last-child { margin-bottom: 0; }
 
-.footer-bottom {
+.footer-anchor {
   margin: 1rem 0 0;
   padding-top: .7rem;
   border-top: 1px solid rgba(244, 182, 62, .3);
+  font-size: .78rem;
+  color: rgba(255, 248, 238, .7);
+  text-align: center;
+  letter-spacing: .02em;
+}
+
+.footer-bottom {
+  margin: .25rem 0 0;
   font-size: .8rem;
   font-weight: 600;
   color: rgba(255, 248, 238, .85);

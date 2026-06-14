@@ -6,7 +6,7 @@
 
   var sectionA = form.querySelector('#form-section-a');
   var sectionB = form.querySelector('#form-section-b');
-  var intentRadios = form.querySelectorAll('input[name="intent"]');
+  var intentRadios = form.querySelectorAll('input[type="radio"][data-target]');
 
   function show(el) {
     if (!el) return;
@@ -28,7 +28,7 @@
   }
 
   function update() {
-    var selected = form.querySelector('input[name="intent"]:checked');
+    var selected = form.querySelector('input[type="radio"][data-target]:checked');
     if (!selected) {
       hide(sectionA);
       hide(sectionB);
