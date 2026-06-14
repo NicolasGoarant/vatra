@@ -764,9 +764,9 @@ a.lang-flag:focus-visible {
   border-top: 1px solid rgba(199, 168, 100, .5);
 }
 
-.project-detail .back-link {
+.back-link {
   display: inline-block;
-  margin-bottom: 1rem;
+  margin-bottom: .9rem;
   color: var(--blue);
   font-size: .92rem;
 }
